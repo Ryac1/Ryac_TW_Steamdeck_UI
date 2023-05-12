@@ -1,0 +1,10 @@
+## Interface: 11200
+## Title: Sell Value
+## Notes: Display the sell value of an item when not at a vendor
+## SavedVariables: SellValues, InvList_HiddenItems, InvList_TooltipMode
+## LoadOnDemand: 0
+## Author: CapnBry & Greenman
+## eMail: bmayland@capnbry.net
+## URL: http://capnbry.net/wow/
+SellValue.xml
+InventoryList.xml

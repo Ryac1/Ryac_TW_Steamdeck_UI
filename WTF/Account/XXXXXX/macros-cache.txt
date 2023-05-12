@@ -1,0 +1,22 @@
+MACRO 2 "." Ability_Marksmanship
+/run TargetNearestEnemy()
+END
+MACRO 7 "Cheer" Ability_Creature_Disease_05
+/cheer
+END
+MACRO 3 "chests" Spell_Fire_SunKey
+/db chests
+END
+MACRO 1 "Hunter markattac" Ability_Hunter_SniperShot
+/script PetAttack(target)
+/cast hunter's mark
+END
+MACRO 4 "rares" Spell_Shadow_ShadowWordPain
+/db rares
+END
+MACRO 6 "Thankyou" Ability_Creature_Poison_02
+/thanks
+END
+MACRO 5 "veins" Spell_Nature_Earthquake
+/db mines
+END

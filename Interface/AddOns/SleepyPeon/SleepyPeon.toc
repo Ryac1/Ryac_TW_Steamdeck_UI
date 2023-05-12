@@ -1,0 +1,11 @@
+## Interface: 11200
+## Version: 1.0.0
+## Title: SleepyPeon
+## Notes: Lightweight standalone replacement of classic XP bar. Displays rest xp over xp cap of current level. 
+## Author: NegusZek
+## X-Creds: Credit to Lepermessiah for the AddOn naming
+
+Helpers.lua
+Tables.lua
+Options.lua
+ExBar.lua

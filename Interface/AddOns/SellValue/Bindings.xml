@@ -1,0 +1,5 @@
+<Bindings>
+	<Binding name="TOGGLEINVLIST" header="INVLIST">
+		InvList_Toggle();
+	</Binding>
+</Bindings>

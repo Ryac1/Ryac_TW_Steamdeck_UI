@@ -1,0 +1,9 @@
+
+pfQuest_questcache = {
+	["Dwarven Outfitters:1:Sten Stoutarm would like 8 pieces of Tough Wolf Meat.:What do we have here? You look as though you might need something to keep your hands warm, hm?\n\nI'll tell you what would help: a pair of nice, warm gloves. And, being the kind soul that I am, I'd be more than happy to provide you with a suitable pair. I've one condition, however.\n\nI need you to go get me some wolf meat. Nice arrangement, hm? You bring me some wolf meat, and I'll make sure you don't lose any digits to frostbite. Well, what do you say?"] = {
+		[1] = 179,
+	},
+	["Coldridge Valley Mail Delivery:3:Deliver the stack of letters to Talin Keeneye.:Hm, I don't suppose you'd be willing to do a favor for me, lad? A stack of letters came through the pass today, but I don't have the time to send them along.\n\nThey're all addressed to Talin Keeneye. You can find him to the west down the road. He's set up camp next to the frozen lake.\n\nWhat do you say?"] = {
+		[1] = 233,
+	},
+}

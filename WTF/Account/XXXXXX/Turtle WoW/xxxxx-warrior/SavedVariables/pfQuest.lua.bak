@@ -1,0 +1,66 @@
+
+pfQuest_config = {
+	["trackerpos"] = {
+		[1] = "RIGHT",
+		[2] = -10.78,
+		[3] = 69.91,
+	},
+	["welcome"] = "1",
+	["currentquestgivers"] = "1",
+	["showclustermini"] = "0",
+	["worldmapmenu"] = "1",
+	["clustermono"] = "0",
+	["minimapnodes"] = "1",
+	["showcluster"] = "1",
+	["mouseover"] = "1",
+	["showspawnmini"] = "1",
+	["favonlogin"] = "0",
+	["minimapbutton"] = "1",
+	["spawncolors"] = "0",
+	["cutoutminimap"] = "1",
+	["showids"] = "0",
+	["arrow"] = "0",
+	["trackingmethod"] = 1,
+	["routestarter"] = "0",
+	["showhighlevel"] = "0",
+	["routeender"] = "1",
+	["questlogbuttons"] = "1",
+	["trackerlevel"] = "1",
+	["showlowlevel"] = "0",
+	["worldmaptransp"] = "1.0",
+	["routes"] = "1",
+	["nodefade"] = "0.3",
+	["cutoutworldmap"] = "0",
+	["showspawn"] = "1",
+	["showtooltips"] = "1",
+	["mindropchance"] = "1",
+	["trackeralpha"] = "0",
+	["trackerfontsize"] = "12",
+	["minimaptransp"] = "1.0",
+	["showfestival"] = "0",
+	["routecluster"] = "1",
+	["allquestgivers"] = "1",
+	["questloglevel"] = "0",
+	["showtracker"] = "1",
+	["tooltiphelp"] = "1",
+	["routeminimap"] = "0",
+	["questlinks"] = "1",
+}
+pfBrowser_fav = {
+	["items"] = {
+	},
+	["objects"] = {
+	},
+	["quests"] = {
+	},
+	["units"] = {
+	},
+}
+pfQuest_history = {
+}
+pfQuest_colors = {
+}
+pfQuest_server = {
+	["items"] = {
+	},
+}

@@ -1,0 +1,9 @@
+
+LevelRangeSettings = {
+	["Turtle WoW|Airdren"] = {
+		["showLevelRange"] = true,
+		["showRaids"] = true,
+		["showInstances"] = true,
+		["showPvP"] = true,
+	},
+}

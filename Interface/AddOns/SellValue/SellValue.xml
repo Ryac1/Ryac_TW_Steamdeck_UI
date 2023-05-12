@@ -1,0 +1,39 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Script file="localization.lua"/>
+	<Script file="SellValue.lua"/>
+	
+	<GameTooltip name="SellValue_Tooltip" inherits="GameTooltipTemplate" parent="UIParent" hidden="true">
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentTextLeft1" inherits="GameTooltipHeaderText" hidden="true"/>
+				<FontString name="$parentTextRight1" inherits="GameTooltipHeaderText" hidden="true"/>
+			</Layer>
+		</Layers>
+	</GameTooltip>
+
+  <Frame name="SellValue" parent="GameTooltip" hidden="false">
+  	<Scripts>
+	  	<OnLoad>
+  			SellValue_OnLoad();
+  		</OnLoad>
+  		<OnShow>
+  			SellValue_OnShow();
+  		</OnShow>
+  		<OnHide>
+  			SellValue_OnHide();
+  		</OnHide>
+	  	<OnEvent>
+  			SellValue_OnEvent();
+		</OnEvent>
+    </Scripts>
+    <Frames>
+			<Frame name="$parentMoneyFrame" inherits="SmallMoneyFrameTemplate" hidden="false">
+				<Anchors>
+					<Anchor point="LEFT" relativePoint="LEFT"/>
+				</Anchors>
+			</Frame>
+		</Frames>
+	</Frame>
+
+</Ui>
