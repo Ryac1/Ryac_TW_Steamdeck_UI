@@ -10,6 +10,9 @@ https://www.youtube.com/watch?v=o0FAUSS4ZJQ
 
 
 # v2.1:
+
+Download: https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/releases/download/v2.1/TW2_1.rar
+
 This is a new release with the latest files i have been using.
 
 Some changes i remember are:
