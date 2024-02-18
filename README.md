@@ -92,7 +92,7 @@ These steps are from the installation guide video.
 - You can drag your spells you need onto your bar. This time without holding L2. You can place the spells on the buttons on the right and left Plus spaces and in the middle two buttons. In the Macro buttons you should find a target macro. i recommend placing this on the L1 button.
 - Next you go to the advanced option on your start menu. I usually use the following options. Make sure to at least use the Minimap options below.
 - Drag the Turtle Wow buttons into place. To drag the big button you need to hold down Shift. you can do this by holding the open bag button down and then drag the big button into place. you can use the same trick to close the key bag.
-- I normally turn of the LFT Spam  in chat by typing in '/lsf spam '. this will disable it.
+- I normally turn of the LFT Spam  in chat by typing in '/lft spam '. this will disable it.
 - Finally move the PF Quest window into place.  I usually turn off the big arrow and enable the minimap route. but you can choose for yourself.
 - You can zoom in and out by holding down the Select or Start buttons.
 - Here you see where to drag your spells to for the buttons to work.
