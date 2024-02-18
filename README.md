@@ -14,7 +14,7 @@ This is a new release with the latest files i have been using.
 
 Some changes i remember are:
 
-- Added files/folders for the new PVP server (folder 'Turtle WoW' is PVP) 
+- Added files/folders for the new PVP server (folder 'Turtle WoW' is PVP, 'Nordanaar' is PVE) 
 - Hunter Pet frame is now correctly in position.
 - Fixed some positioning of the right side buttons.
 - Some minor issues i can't remember :)
@@ -72,9 +72,9 @@ These steps are from the installation guide video.
 
 - I assume you have made an account and downloaded the Turtle WoW and my file, check the description. If you have not then do this now.
 - First you go to the downloads folder and extract the turtle WoW file to you documents folder.
-- Then you extract the T W file into the downloads folder and copy both the WTF folder and Interface folder. Then paste it into the Turtle WoW folder in your documents.  Let it write into, and overwrite all files.
+- Then you extract the TW file into the downloads folder and copy both the WTF folder and Interface folder. Then paste it into the Turtle WoW folder in your documents.  Let it write into, and overwrite all files.
 - Go into the WTF folder and then into the Account folder. Rename the folder to your created account name. Use Steam plus X to get the keyboard.
-- Go into the account folder you just renamed and then into the Turtle WoW folder. Now rename a folder to your characters name you intent to use. you can also skip this step and do it later.
+- Go into the account folder you just renamed and then into the Turtle WoW( For PVP, Nordanaar for PVE) folder. Now rename a folder to your characters name you intent to use. you can also skip this step and do it later.
 - Now open Steam from the desktop and go to 'Games', 'Add non steam game', Click 'Browse', find the 'documents folder', open the turtle wow folder. Then under 'file' type Select 'all files' and select the wow.exe file and add it to Steam.
 - Go back to your desktop and open 'Gaming Mode'.
 - Once you are in 'Gaming Mode', go to your 'library' and then 'Non Steam Games'. it should be all the way on the bottom.
