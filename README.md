@@ -90,12 +90,12 @@ These steps are from the installation guide video.
 7. Go back to your desktop and open 'Gaming Mode'.
 8. Once you are in 'Gaming Mode', go to your 'library' and then 'Non Steam Games'. it should be all the way on the bottom.
 9. Open Wow.exe and go to 'properties'. First rename 'wow.exe' to 'World of Warcraft'.
-10. Then go to Compatibility, select the option and then use Proton 7.06.
-11. Then go to the controller screen, select the current layout go to search option and type in RYAC. It should find the DAB TW layout. Press X to apply the layout.
+10. Then go to Compatibility, select the checkbox and then use Proton 7.06.
+11. Then go to the controller screen, select the current layout go to search option and type in RYAC. It should find the DAB TW 2.1 layout. Press X to apply the layout.
 12. Press 'Play' to start up the game. Fill in your Account name and password to log in. Make sure to select the 'Remember Account name' checkbox.
 13. Create a character with the name you used to rename the character folder and log into the game.
 14. When you are in the game it will probably looks like this.
-15. Press Steam + X buttons to open the Keyboard. Type '/dab' and press enter.  Once DAB opens go to 'Misc Options' and under 'Load Profile' load the 'Ryac2' profile and close DAB again.
+15. Press Steam + X buttons to open the Keyboard. Type '/dab' and press enter.  Once DAB opens go to 'Misc Options' and under 'Load Profile' load the 'Ryac3' profile (or specific class profile) and close DAB again.
 16. You can now play the game.. Because i created this character before it already shows the spells on the bars. When you first start the starterspells will be located on the L2 bars. I will show you now how to set up the UI when you do not rename a character folder first.
 17. This is how it looks when you do not rename a character folder. You will need to move some elements into place. Let me show you.
 18. First Open DAB by typing '/dab', Once DAB opens go to 'Misc Options' and under 'Load Profile' load the 'Ryac2' profile and close DAB again. Move the Experience bar by dragging it into place. Then  Resize the Chat window. Set Gradiant and set font size to 16 
