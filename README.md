@@ -101,5 +101,5 @@ These steps are from the installation guide video.
 
 possible/known bugs:
 
-- for warriors and other single spell classes, when buying new ranks (heroic strike for ex.) it will remove the button for bar for some reason, you need to do a reload once to fix it
+- for warriors and other single spell classes, when buying new ranks (heroic strike for ex.) it will remove the button/spell from the bar for some reason, you need to do a reload once to fix it
 - the Turtle Wow minimap icons sometimes do not stay in place
