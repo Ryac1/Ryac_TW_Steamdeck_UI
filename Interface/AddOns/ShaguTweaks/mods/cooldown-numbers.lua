@@ -1,12 +1,13 @@
-local _G = _G or getfenv(0)
+local _G = ShaguTweaks.GetGlobalEnv()
+local T = ShaguTweaks.T
 local hooksecurefunc = hooksecurefunc or ShaguTweaks.hooksecurefunc
 local GetExpansion = ShaguTweaks.GetExpansion
 local AddBorder = ShaguTweaks.AddBorder
 local TimeConvert = ShaguTweaks.TimeConvert
 
 local module = ShaguTweaks:register({
-  title = "Cooldown Numbers",
-  description = "Display  the remaining duration as text on every cooldown.",
+  title = T["Cooldown Numbers"],
+  description = T["Display  the remaining duration as text on every cooldown."],
   expansions = { ["vanilla"] = true, ["tbc"] = true },
   enabled = nil,
   color = { r = .3, g = .3, b = .3, a = .9}
@@ -35,13 +36,13 @@ end
 local function CreateCoolDown(cooldown, start, duration)
   local parent = cooldown:GetParent()
   if not parent then return end
-    
+
   -- skip already set debuff timers
   if cooldown.readable then return end
-    
+
   local parentname = parent and parent.GetName and parent:GetName()
   parentname = parentname or "UnknownCooldownFrame"
-        
+
   cooldown.cooldowntext = CreateFrame("Frame", parentname .. "CooldownText", cooldown)
   cooldown.cooldowntext:SetAllPoints(cooldown)
   cooldown.cooldowntext:SetFrameLevel(parent:GetFrameLevel() + 1)
@@ -63,20 +64,29 @@ local function SetCooldown(this, start, duration, enable)
   if this.noCooldownCount then return end
 
   -- don't draw global cooldowns
-  if duration < 2 then return end
+  if not duration or duration < 2 then
+    -- hide if already existing
+    if this.cooldowntext then
+      this.cooldowntext:Hide()
+    end
+
+    return
+  end
 
   if not this.cooldowntext then
     CreateCoolDown(this, start, duration)
   end
-  
-  if start > 0 and duration > 0 and (not enable or enable > 0) then
-    this.cooldowntext:Show()
-  else
-    this.cooldowntext:Hide()  
-  end
 
-  this.cooldowntext.start = start
-  this.cooldowntext.duration = duration
+  if this.cooldowntext then
+    if start > 0 and duration > 0 and (not enable or enable > 0) then
+      this.cooldowntext:Show()
+    else
+      this.cooldowntext:Hide()
+    end
+
+    this.cooldowntext.start = start
+    this.cooldowntext.duration = duration
+  end
 end
 
 module.enable = function(self)

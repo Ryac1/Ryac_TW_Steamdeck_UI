@@ -1,10 +1,11 @@
-local _G = _G or getfenv(0)
+local _G = ShaguTweaks.GetGlobalEnv()
+local T = ShaguTweaks.T
 
 local module = ShaguTweaks:register({
-  title = "Debuff Timer",
-  description = "Show debuff durations on the target unit frame.",
+  title = T["Debuff Timer"],
+  description = T["Show debuff durations on the target unit frame."],
   expansions = { ["vanilla"] = true, ["tbc"] = nil },
-  category = "Unit Frames",
+  category = T["Unit Frames"],
   enabled = true,
 })
 
@@ -49,9 +50,9 @@ module.enable = function(self)
 
     for i=1, MAX_TARGET_DEBUFFS do
       local effect, rank, texture, stacks, dtype, duration, timeleft = libdebuff:UnitDebuff("target", i)
-  		local button = _G["TargetFrameDebuff"..i]
+      local button = _G["TargetFrameDebuff"..i]
 
-      if not button.cd then
+      if button and not button.cd then
         button.cd = CreateFrame("Model", "TargetFrameDebuff"..i.."Cooldown", button, "CooldownFrameTemplate")
         button.cd.noCooldownCount = true
         button.cd:SetAllPoints()
@@ -59,17 +60,37 @@ module.enable = function(self)
         button.cd:SetAlpha(.8)
       end
 
-  		if effect and duration and timeleft then
+      local dCount = _G["TargetFrameDebuff" .. i .. "Count"]
+      if button and dCount then
+        if not dCount.fixup then
+          dCount.fixup = true
+          dCount:SetPoint("BOTTOMRIGHT", "TargetFrameDebuff" .. i, "BOTTOMRIGHT", 6, -3)
+        end
+        if stacks and stacks > 1 then
+          dCount:SetText("|c0000ff3b" .. stacks)
+          dCount:Show()
+        else
+          dCount:Hide()
+        end
+      end
+
+      local dBorder = _G["TargetFrameDebuff" .. i .. "Border"]
+      if button and dBorder then
+        local color = dtype and DebuffTypeColor[dtype] or DebuffTypeColor["none"]
+        dBorder:SetVertexColor(color.r, color.g, color.b)
+      end
+
+      if button and effect and duration and timeleft then
         local start = GetTime() + timeleft - duration
-        CooldownFrame_SetTimer(button.cd, start, duration, 1)
         CreateTextCooldown(button.cd)
+        CooldownFrame_SetTimer(button.cd, start, duration, 1)
         button.cd.readable.start = start
         button.cd.readable.duration = duration
         button.cd.readable:Show()
         button.cd:Show()
-      else
+      elseif button then
         CooldownFrame_SetTimer(button.cd,0,0,0)
       end
-  	end
+    end
   end
 end

@@ -1,8 +1,12 @@
-local _G = _G or getfenv(0)
+local _G = ShaguTweaks.GetGlobalEnv()
+local T = ShaguTweaks.T
 local GetExpansion = ShaguTweaks.GetExpansion
 local mod = math.mod or mod
 
 local current_config = {}
+local max_width = 500
+local max_height = 680
+
 local settings = CreateFrame("Frame", "AdvancedSettingsGUI", UIParent)
 settings:Hide()
 
@@ -13,14 +17,26 @@ settings:SetScript("OnHide", function()
 end)
 
 settings:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
-settings:SetWidth(434)
-settings:SetHeight(400)
+settings:SetWidth(max_width)
+settings:SetHeight(max_height)
+
 settings:SetBackdrop({
   bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
   edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
   tile = true, tileSize = 32, edgeSize = 32,
   insets = { left = 11, right = 12, top = 12, bottom = 11 }
 })
+
+settings.scrollframe = CreateFrame('ScrollFrame', 'AdvancedSettingsGUIScrollframe', settings, 'UIPanelScrollFrameTemplate')
+settings.scrollframe:SetHeight(max_height - 80)
+settings.scrollframe:SetWidth(max_width - 50)
+settings.scrollframe:SetPoint('CENTER', settings, -16, 15)
+settings.scrollframe:Hide()
+
+settings.container = CreateFrame("Frame", "AdvancedSettingsGUIContainer", settings)
+settings.container:SetPoint("CENTER", settings, 0, 20)
+settings.container:SetHeight(max_height - 30)
+settings.container:SetWidth(max_width - 20)
 
 settings.title = CreateFrame("Frame", "AdvancedSettingsGUITtitle", settings)
 settings.title:SetPoint("TOP", settings, "TOP", 0, 12)
@@ -32,7 +48,7 @@ settings.title.tex:SetTexture("Interface\\DialogFrame\\UI-DialogBox-Header")
 settings.title.tex:SetAllPoints()
 
 settings.title.text = settings.title:CreateFontString(nil, "HIGH", "GameFontNormal")
-settings.title.text:SetText("Advanced Options")
+settings.title.text:SetText(T["Advanced Options"])
 settings.title.text:SetPoint("TOP", 0, -14)
 
 settings.cancel = CreateFrame("Button", "AdvancedSettingsGUICancel", settings, "GameMenuButtonTemplate")
@@ -63,7 +79,10 @@ settings.okay:SetScript("OnClick", function()
   end
 
   -- reload the UI if required
-  if reload then ReloadUI() end
+  if reload then
+    Minimap:SetMaskTexture("Textures\\MinimapMask")
+    ReloadUI()
+  end
 
   settings:Hide()
 end)
@@ -84,7 +103,7 @@ settings.load = function(self)
   local gui = {}
   for title, module in pairs(ShaguTweaks.mods) do
     if module.expansions[expansion] then
-      local category = module.category or "General"
+      local category = module.category or T["General"]
       gui[category] = gui[category] or {}
       gui[category][title] = module
     end
@@ -98,8 +117,8 @@ settings.load = function(self)
 
     -- add category background
     settings.category = settings.category or {}
-    settings.category[category] = settings.category[category] or CreateFrame("Frame", nil, settings)
-    settings.category[category]:SetPoint("TOPLEFT", settings, "TOPLEFT", spacing, -yoff)
+    settings.category[category] = settings.category[category] or CreateFrame("Frame", nil, settings.container)
+    settings.category[category]:SetPoint("TOPLEFT", settings.container, "TOPLEFT", spacing, -yoff)
     settings.category[category]:SetBackdrop({
       bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
       edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
@@ -162,10 +181,24 @@ settings.load = function(self)
     end
 
     yoff = yoff + spacing/2
-    settings.category[category]:SetPoint("BOTTOMRIGHT", settings, "TOPRIGHT", -spacing, -yoff)
+    settings.category[category]:SetPoint("BOTTOMRIGHT", settings.container, "TOPRIGHT", -spacing, -yoff)
   end
 
-  settings:SetHeight(yoff + 40)
+  -- set container size to required height
+  settings.container:SetHeight(yoff)
+
+  if yoff < max_height then
+    -- reduce base frame if possible
+    settings:SetHeight(yoff + 60)
+  elseif yoff > max_height then
+    -- set up scrollframe when needed
+    settings.container:SetParent(settings.scrollframe)
+    settings.container:SetHeight(settings.scrollframe:GetHeight())
+    settings.container:SetWidth(settings.scrollframe:GetWidth() + 20)
+
+    settings.scrollframe:SetScrollChild(settings.container)
+    settings.scrollframe:Show()
+  end
 end
 
 settings.defaults = function()
@@ -196,7 +229,7 @@ end
 
 local advanced = CreateFrame("Button", "GameMenuButtonAdvancedOptions", GameMenuFrame, "GameMenuButtonTemplate")
 advanced:SetPoint("TOP", GameMenuButtonUIOptions, "BOTTOM", 0, -1)
-advanced:SetText("Advanced Options|cffffff00*")
+advanced:SetText(T["Advanced Options"] .. "|cffffff00*")
 advanced:SetScript("OnClick", function()
   HideUIPanel(GameMenuFrame)
   settings:Show()

@@ -1,0 +1,2 @@
+
+WHUD_VARS = nil

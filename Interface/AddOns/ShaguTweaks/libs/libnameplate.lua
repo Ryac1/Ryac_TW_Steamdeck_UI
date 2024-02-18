@@ -1,4 +1,4 @@
-local _G = _G or getfenv(0)
+local _G = ShaguTweaks.GetGlobalEnv()
 local GetExpansion = ShaguTweaks.GetExpansion
 local GetUnitData = ShaguTweaks.GetUnitData
 
@@ -50,19 +50,19 @@ ShaguTweaks.libnameplate:SetScript("OnUpdate", function()
 
         -- register OnUpdate functions
         local oldUpdate = plate:GetScript("OnUpdate")
-        plate:SetScript("OnUpdate", function()
-          if oldUpdate then oldUpdate() end
+        plate:SetScript("OnUpdate", function(self, elapsed)
+          if oldUpdate then oldUpdate(self, elapsed) end
           for id, func in pairs(ShaguTweaks.libnameplate.OnUpdate) do
-            func()
+            func(self, elapsed)
           end
         end)
 
         -- register OnShow functions
         local oldShow = plate:GetScript("OnShow")
-        plate:SetScript("OnShow", function()
-          if oldShow then oldUpdate() end
+        plate:SetScript("OnShow", function(self)
+          if oldShow then oldShow(self) end
           for id, func in pairs(ShaguTweaks.libnameplate.OnShow) do
-            func()
+            func(self)
           end
         end)
 

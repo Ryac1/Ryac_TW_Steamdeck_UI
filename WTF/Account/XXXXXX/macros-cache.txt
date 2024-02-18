@@ -7,12 +7,19 @@ END
 MACRO 3 "chests" Spell_Fire_SunKey
 /db chests
 END
+MACRO 9 "Dps" Spell_Holy_RetributionAura
+/script EquipSet("dps")
+/cast Battle Stance
+END
 MACRO 1 "Hunter markattac" Ability_Hunter_SniperShot
 /script PetAttack(target)
 /cast hunter's mark
 END
 MACRO 4 "rares" Spell_Shadow_ShadowWordPain
 /db rares
+END
+MACRO 8 "Tank" Ability_Warrior_ShieldMastery
+/script EquipSet("tank")
 END
 MACRO 6 "Thankyou" Ability_Creature_Poison_02
 /thanks

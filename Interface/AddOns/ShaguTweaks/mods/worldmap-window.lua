@@ -1,10 +1,12 @@
-local _G = _G or getfenv(0)
+local _G = ShaguTweaks.GetGlobalEnv()
+local T = ShaguTweaks.T
+local HookScript = ShaguTweaks.HookScript
 
 local module = ShaguTweaks:register({
-  title = "WorldMap Window",
-  description = "Turns the world map into a movable window. The map can be scaled with <Ctrl> + Mousewheel.",
+  title = T["WorldMap Window"],
+  description = T["Turns the world map into a movable window. The map can be scaled with <Ctrl> + Mousewheel."],
   expansions = { ["vanilla"] = true, ["tbc"] = true },
-  category = "World & MiniMap",
+  category = T["World & MiniMap"],
   enabled = true,
 })
 
@@ -28,34 +30,35 @@ module.enable = function(self)
 
     UIPanelWindows["WorldMapFrame"] = { area = "center" }
 
-    WorldMapFrame:SetScript("OnShow", function()
-      -- default events
-      UpdateMicroButtons()
-      PlaySound("igQuestLogOpen")
-      CloseDropDownMenus()
-      SetMapToCurrentZone()
-      WorldMapFrame_PingPlayerPosition()
+    -- make sure the hooks get only applied once
+    if not this.hooked then
+      this.hooked = true
 
-      -- customize
-      this:EnableKeyboard(false)
-      this:EnableMouseWheel(1)
-    end)
+      HookScript(WorldMapFrame, "OnShow", function()
+        -- customize
+        this:EnableKeyboard(false)
+        this:EnableMouseWheel(1)
 
-    WorldMapFrame:SetScript("OnMouseWheel", function()
-      if IsShiftKeyDown() then
-        WorldMapFrame:SetAlpha(WorldMapFrame:GetAlpha() + arg1/10)
-      elseif IsControlKeyDown() then
-        WorldMapFrame:SetScale(WorldMapFrame:GetScale() + arg1/10)
-      end
-    end)
+        -- set back to default scale
+        WorldMapFrame:SetScale(.85)
+      end)
 
-    WorldMapFrame:SetScript("OnMouseDown",function()
-      WorldMapFrame:StartMoving()
-    end)
+      HookScript(WorldMapFrame, "OnMouseWheel", function()
+        if IsShiftKeyDown() then
+          WorldMapFrame:SetAlpha(WorldMapFrame:GetAlpha() + arg1/10)
+        elseif IsControlKeyDown() then
+          WorldMapFrame:SetScale(WorldMapFrame:GetScale() + arg1/10)
+        end
+      end)
 
-    WorldMapFrame:SetScript("OnMouseUp",function()
-      WorldMapFrame:StopMovingOrSizing()
-    end)
+      HookScript(WorldMapFrame, "OnMouseDown",function()
+        WorldMapFrame:StartMoving()
+      end)
+
+      HookScript(WorldMapFrame, "OnMouseUp",function()
+        WorldMapFrame:StopMovingOrSizing()
+      end)
+    end
 
     WorldMapFrame:SetMovable(true)
     WorldMapFrame:EnableMouse(true)

@@ -1,11 +1,12 @@
-local _G = _G or getfenv(0)
+local _G = ShaguTweaks.GetGlobalEnv()
+local T = ShaguTweaks.T
 local HookAddonOrVariable = ShaguTweaks.HookAddonOrVariable
 local GetExpansion = ShaguTweaks.GetExpansion
 local AddBorder = ShaguTweaks.AddBorder
 
 local module = ShaguTweaks:register({
-  title = "Darkened UI",
-  description = "Turns the entire interface into darker colors.",
+  title = T["Darkened UI"],
+  description = T["Turns the entire interface into darker colors."],
   expansions = { ["vanilla"] = true, ["tbc"] = true },
   enabled = nil,
   color = { r = .3, g = .3, b = .3, a = .9}
@@ -47,27 +48,28 @@ local regionskips = {
 local backgrounds = {
   ["^SpellBookFrame$"] = { 325, 355, 17, -74 },
   ["^ItemTextFrame$"] = { 300, 355, 24, -74 },
-  ["^QuestLogDetailScrollFrame$"] = {300, 261, 0, 0 },
+  ["^QuestLogDetailScrollFrame$"] = { QuestLogDetailScrollChildFrame:GetWidth(), QuestLogDetailScrollChildFrame:GetHeight(), 0, 0 },
   ["^QuestFrame(.+)Panel$"] = { 300, 330, 24, -82 },
   ["^GossipFrameGreetingPanel$"] = { 300, 330, 24, -82 },
 }
 
 local borders = {
-  ["ShapeshiftButton"] = 3,
-  ["BuffButton"] = 3,
-  ["TempEnchant"] = 3,
-  ["SpellButton"] = 3,
-  ["SpellBookSkillLineTab"] = 3,
-  ["ActionButton%d+$"] = 3,
-  ["MultiBar(.+)Button%d+$"] = 3,
-  ["Character(.+)Slot$"] = 3,
-  ["Inspect(.+)Slot$"] = 3,
-  ["ContainerFrame(.+)Item"] = 3,
-  ["MainMenuBarBackpackButton$"] = 3,
-  ["CharacterBag(.+)Slot$"] = 3,
-  ["ChatFrame(.+)Button"] = -2,
+  ["ShapeshiftButton"] = 2,
+  ["BuffButton"] = 2,
+  ["TargetFrameBuff"] = 2,
+  ["TempEnchant"] = 2,
+  ["SpellButton"] = 2,
+  ["SpellBookSkillLineTab"] = 2,
+  ["ActionButton%d+$"] = 2,
+  ["MultiBar(.+)Button%d+$"] = 2,
+  ["Character(.+)Slot$"] = 2,
+  ["Inspect(.+)Slot$"] = 2,
+  ["ContainerFrame(.+)Item"] = 2,
+  ["MainMenuBarBackpackButton$"] = 2,
+  ["CharacterBag(.+)Slot$"] = 2,
+  ["ChatFrame(.+)Button"] = -3,
   ["PetFrameHappiness"] = 1,
-  ["MicroButton"] = { -20, 1, 1, 1 },
+  ["MicroButton"] = { -21, 0, 0, 0 },
 }
 
 local addonframes = {

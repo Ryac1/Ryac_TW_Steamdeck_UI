@@ -11,6 +11,9 @@ All tweaks are made to the default interface and might not take effect if you al
 All addon settings can be controlled in game via the "Advanced Options" button on the Main Menu (*Esc*).
 Every of the listed features below, can be completely disabled in that menu in case you don't like it.
 
+**Notice:**
+*This Addon or a superior and maintained version of it, is already included in [pfUI](https://github.com/shagu.pfUI). If using this in combination with pfUI you might get bad results or up to performance regressions.*
+
 ## Installation (Vanilla, 1.12)
 1. Download **[Latest Version](https://github.com/shagu/ShaguTweaks/archive/master.zip)**
 2. Unpack the Zip file
@@ -39,7 +42,7 @@ Every of the listed features below, can be completely disabled in that menu in c
   *Changes the class color code of shamans to blue, as known from TBC+.*
 
 - **Chat Hyperlinks**  
-  *Copy website URLs from the chat, transforms CLINKs into real items and handles quest links.*
+  *Copy website URLs from the chat, transforms CLINKs into real items and handles quest and player links.*
 
 - **Chat Tweaks**  
   *Allows to scroll using the mouse wheel, enables sticky chat channels and repeats message on arrow up.*
@@ -78,13 +81,19 @@ Every of the listed features below, can be completely disabled in that menu in c
   *Hides unnecessary mini map buttons and allows to zoom using the mouse wheel.*
 
 - **Movable Unit Frames**  
-  *Player and Target unit frames can be moved while <Shift> and <Ctrl> are pressed together.*
+  *Player and Target unit frames can be moved while "Shift" and "Ctrl" are pressed together.*
+
+- **Nameplate Castbar**  
+  *Adds a castbar to the nameplate based on combat log estimations.*
 
 - **Nameplate Class Colors**  
   *Changes the nameplate health bar color to the class color.*
 
 - **Nameplate Scale**  
   *Makes all nameplates honor the UI-Scale setting.*
+
+- **Reduced Actionbar Size**  
+  *Reduces the actionbar size by removing several items such as the bag panel and microbar*
 
 - **Sell Junk**  
   *Adds a “Sell Junk” button to every merchant window, that sells all grey items.*
@@ -120,7 +129,7 @@ Every of the listed features below, can be completely disabled in that menu in c
   *Adds coordinates to the bottom of the World Map.*
 
 - **WorldMap Window**  
-  *Turns the world map into a movable window. The map can be scaled with <Ctrl> + Mousewheel.*
+  *Turns the world map into a movable window. The map can be scaled with "Ctrl" + Mousewheel.*
 
 ## Screenshots
 ![preview](screenshots/dark.jpg)  

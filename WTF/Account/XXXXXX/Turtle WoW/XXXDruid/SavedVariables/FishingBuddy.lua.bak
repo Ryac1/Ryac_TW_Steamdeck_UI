@@ -1,0 +1,12 @@
+
+FishingBuddy_Player = {
+	["Settings"] = {
+		["ResetWatcher"] = 1,
+		["TitanClickToSwitch"] = 0,
+		["InfoBarClickToSwitch"] = 0,
+	},
+	["WasWearing"] = {
+	},
+	["Outfit"] = {
+	},
+}

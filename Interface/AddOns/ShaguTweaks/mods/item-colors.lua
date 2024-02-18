@@ -1,13 +1,14 @@
-local _G = _G or getfenv(0)
+local _G = ShaguTweaks.GetGlobalEnv()
+local T = ShaguTweaks.T
 local GetExpansion = ShaguTweaks.GetExpansion
 local AddBorder = ShaguTweaks.AddBorder
 local HookAddonOrVariable = ShaguTweaks.HookAddonOrVariable
 
 local module = ShaguTweaks:register({
-  title = "Item Rarity Borders",
-  description = "Show item rarity as the border color on bags, bank, character and inspect frames.",
+  title = T["Item Rarity Borders"],
+  description = T["Show item rarity as the border color on bags, bank, character and inspect frames."],
   expansions = { ["vanilla"] = true, ["tbc"] = true },
-  category = "Tooltip & Items",
+  category = T["Tooltip & Items"],
   enabled = true,
 })
 
@@ -44,22 +45,24 @@ module.enable = function(self)
     local refresh_paperdoll = function()
       for i, slot in pairs(paperdoll_slots) do
         local button = _G["Character"..slot]
-        local border = button.ShaguTweaks_border
+        if button then
+          local border = button.ShaguTweaks_border
 
-        if not border then
-          border = AddBorder(button, 3, { r = .5, g = .5, b = .5 })
-        end
+          if not border then
+            border = AddBorder(button, 3, { r = .5, g = .5, b = .5 })
+          end
 
-        if not defcolor["paperdoll"] then
-          defcolor["paperdoll"] = { border:GetBackdropBorderColor() }
-        end
+          if not defcolor["paperdoll"] then
+            defcolor["paperdoll"] = { border:GetBackdropBorderColor() }
+          end
 
-        local quality = GetInventoryItemQuality("player", i)
-        if quality then
-          local r, g, b = GetItemQualityColor(quality)
-          border:SetBackdropBorderColor(r, g, b, 1)
-        else
-          border:SetBackdropBorderColor(defcolor["paperdoll"][1], defcolor["paperdoll"][2], defcolor["paperdoll"][3], 1)
+          local quality = GetInventoryItemQuality("player", i)
+          if quality then
+            local r, g, b = GetItemQualityColor(quality)
+            border:SetBackdropBorderColor(r, g, b, 1)
+          else
+            border:SetBackdropBorderColor(defcolor["paperdoll"][1], defcolor["paperdoll"][2], defcolor["paperdoll"][3], 1)
+          end
         end
       end
     end
@@ -122,24 +125,26 @@ module.enable = function(self)
     local refresh_bags = function()
       for i = 1, 12 do
         local frame = _G["ContainerFrame"..i]
-        local name = frame:GetName()
-        local id = frame:GetID()
-        for i = 1, MAX_CONTAINER_ITEMS do
-          local button = _G[name.."Item"..i]
+        if frame then
+          local name = frame:GetName()
+          local id = frame:GetID()
+          for i = 1, MAX_CONTAINER_ITEMS do
+            local button = _G[name.."Item"..i]
 
-          if not defcolor["bag"] then
-            defcolor["bag"] = { button.ShaguTweaks_border:GetBackdropBorderColor() }
-          end
+            if not defcolor["bag"] then
+              defcolor["bag"] = { button.ShaguTweaks_border:GetBackdropBorderColor() }
+            end
 
-          button.ShaguTweaks_border:SetBackdropBorderColor(defcolor["bag"][1], defcolor["bag"][2], defcolor["bag"][3], 1)
+            button.ShaguTweaks_border:SetBackdropBorderColor(defcolor["bag"][1], defcolor["bag"][2], defcolor["bag"][3], 1)
 
-          local link = GetContainerItemLink(id, button:GetID())
-          if button and button:IsShown() and link then
-            local _, _, istring  = string.find(link, "|H(.+)|h")
-            local _, _, quality = GetItemInfo(istring)
-            if quality then
-              local r, g, b = GetItemQualityColor(quality)
-              button.ShaguTweaks_border:SetBackdropBorderColor(r,g,b)
+            local link = GetContainerItemLink(id, button:GetID())
+            if button and button:IsShown() and link then
+              local _, _, istring  = string.find(link, "|H(.+)|h")
+              local _, _, quality = GetItemInfo(istring)
+              if quality then
+                local r, g, b = GetItemQualityColor(quality)
+                button.ShaguTweaks_border:SetBackdropBorderColor(r,g,b)
+              end
             end
           end
         end

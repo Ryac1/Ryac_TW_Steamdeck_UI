@@ -1,0 +1,4 @@
+aux-addon: enabled
+EnhTooltip: disabled
+TurtleSnacks: disabled
+TurtleChatColors: disabled

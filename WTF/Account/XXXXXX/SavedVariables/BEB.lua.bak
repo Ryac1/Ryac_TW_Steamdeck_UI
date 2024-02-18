@@ -1,0 +1,11 @@
+
+BEBGlobal = {
+	["Chars"] = {
+		["Blakesmith of Turtle WoW"] = {
+			["Profile"] = false,
+			["Version"] = 0.87,
+		},
+	},
+	["profiles"] = {
+	},
+}

@@ -1,4 +1,5 @@
-local _G = _G or getfenv(0)
+local _G = ShaguTweaks.GetGlobalEnv()
+local T = ShaguTweaks.T
 local gfind = string.gmatch or string.gfind
 local GetUnitData = ShaguTweaks.GetUnitData
 local hooksecurefunc = ShaguTweaks.hooksecurefunc
@@ -8,10 +9,10 @@ local rgbhex = ShaguTweaks.rgbhex
 local strsplit = ShaguTweaks.strsplit
 
 local module = ShaguTweaks:register({
-  title = "Chat Hyperlinks",
-  description = "Copy website URLs from the chat, transforms CLINKs into real items and handles quest links.",
+  title = T["Chat Hyperlinks"],
+  description = T["Copy website URLs from the chat, transforms CLINKs into real items and handles quest and player links."],
   expansions = { ["vanilla"] = true, ["tbc"] = true },
-  category = "Social & Chat",
+  category = T["Social & Chat"],
   enabled = true,
 })
 
@@ -156,6 +157,7 @@ module.enable = function(self)
   local HookSetItemRef = SetItemRef
   function _G.SetItemRef(link, text, button)
     local questlink, _, quest_id = string.find(link, "quest:(%d+):.*")
+    local playerlink = strsub(link, 1, 6) == "player"
 
     -- don't overwrite other addons questlink hook
     if ShaguQuest or pfQuest or Questie then questlink = nil end
@@ -176,27 +178,40 @@ module.enable = function(self)
         ItemRefTooltip:Show()
       end
       return
+    elseif playerlink then
+      local name = strsub(link, 8)
+      if ( name and (strlen(name) > 0) ) then
+        local name, _ = strsplit(":", name)
+        name = gsub(name, "([^%s]*)%s+([^%s]*)%s+([^%s]*)", "%3")
+        name = gsub(name, "([^%s]*)%s+([^%s]*)", "%2")
+        if IsShiftKeyDown() and ChatFrameEditBox:IsVisible() then
+          ChatFrameEditBox:Insert("|cffffffff|Hplayer:"..name.."|h["..name.."]|h|r")
+          return
+        end
+      end
     end
     HookSetItemRef(link, text, button)
   end
 
   do -- add class colors to chat
     for i=1,NUM_CHAT_WINDOWS do
-      if not _G["ChatFrame"..i].HookAddMessage then
+      if _G["ChatFrame"..i] and not _G["ChatFrame"..i].HookAddMessage then
         _G["ChatFrame"..i].HookAddMessage = _G["ChatFrame"..i].AddMessage
         _G["ChatFrame"..i].AddMessage = function(frame, text, a1, a2, a3, a4, a5)
-          -- Remove prat CLINKs
-          text = gsub(text, "{CLINK:(%x+):([%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-):([^}]-)}", "|c%1|Hitem:%2|h[%3]|h|r") -- tbc
-          text = gsub(text, "{CLINK:(%x+):([%d-]-:[%d-]-:[%d-]-:[%d-]-):([^}]-)}", "|c%1|Hitem:%2|h[%3]|h|r") -- vanilla
+          if text then
+            -- Remove prat CLINKs
+            text = gsub(text, "{CLINK:(%x+):([%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-):([^}]-)}", "|c%1|Hitem:%2|h[%3]|h|r") -- tbc
+            text = gsub(text, "{CLINK:(%x+):([%d-]-:[%d-]-:[%d-]-:[%d-]-):([^}]-)}", "|c%1|Hitem:%2|h[%3]|h|r") -- vanilla
 
-          -- Remove chatter CLINKs
-          text = gsub(text, "{CLINK:item:(%x+):([%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-):([^}]-)}", "|c%1|Hitem:%2|h[%3]|h|r")
-          text = gsub(text, "{CLINK:enchant:(%x+):([%d-]-):([^}]-)}", "|c%1|Henchant:%2|h[%3]|h|r")
-          text = gsub(text, "{CLINK:spell:(%x+):([%d-]-):([^}]-)}", "|c%1|Hspell:%2|h[%3]|h|r")
-          text = gsub(text, "{CLINK:quest:(%x+):([%d-]-):([%d-]-):([^}]-)}", "|c%1|Hquest:%2:%3|h[%4]|h|r")
+            -- Remove chatter CLINKs
+            text = gsub(text, "{CLINK:item:(%x+):([%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-:[%d-]-):([^}]-)}", "|c%1|Hitem:%2|h[%3]|h|r")
+            text = gsub(text, "{CLINK:enchant:(%x+):([%d-]-):([^}]-)}", "|c%1|Henchant:%2|h[%3]|h|r")
+            text = gsub(text, "{CLINK:spell:(%x+):([%d-]-):([^}]-)}", "|c%1|Hspell:%2|h[%3]|h|r")
+            text = gsub(text, "{CLINK:quest:(%x+):([%d-]-):([%d-]-):([^}]-)}", "|c%1|Hquest:%2:%3|h[%4]|h|r")
 
-          -- Detect URLs
-          text = HandleLink(text)
+            -- Detect URLs
+            text = HandleLink(text)
+          end
 
           _G["ChatFrame"..i].HookAddMessage(frame, text, a1, a2, a3, a4, a5)
         end

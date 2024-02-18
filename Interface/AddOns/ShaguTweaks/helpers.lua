@@ -1,5 +1,28 @@
-local _G = _G or getfenv(0)
 local gfind = string.gmatch or string.gfind
+
+ShaguTweaks.GetExpansion = function()
+  local _, _, _, client = GetBuildInfo()
+  client = client or 11200
+
+  -- detect client expansion
+  if client >= 20000 and client <= 20400 then
+    return "tbc"
+  elseif client >= 30000 and client <= 30300 then
+    return "wotlk"
+  else
+    return "vanilla"
+  end
+end
+
+ShaguTweaks.GetGlobalEnv = function()
+  if ShaguTweaks.GetExpansion() == 'vanilla' then
+    return getfenv(0)
+  else
+    return _G or getfenv(0)
+  end
+end
+
+local _G = ShaguTweaks.GetGlobalEnv()
 
 local gradientcolors = {}
 ShaguTweaks.GetColorGradient = function(perc)
@@ -51,6 +74,14 @@ ShaguTweaks.GetExpansion = function()
   else
     return "vanilla"
   end
+end
+
+ShaguTweaks.HookScript = function(f, script, func)
+  local prev = f:GetScript(script)
+  f:SetScript(script, function(a1,a2,a3,a4,a5,a6,a7,a8,a9)
+    if prev then prev(a1,a2,a3,a4,a5,a6,a7,a8,a9) end
+    func(a1,a2,a3,a4,a5,a6,a7,a8,a9)
+  end)
 end
 
 ShaguTweaks.HookAddonOrVariable = function(addon, func)
@@ -201,7 +232,7 @@ end
 
 local border = {
   edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
-  tile = true, tileSize = 8, edgeSize = 16,
+  tile = true, tileSize = 8, edgeSize = 12,
   insets = { left = 0, right = 0, top = 0, bottom = 0 }
 }
 ShaguTweaks.AddBorder = function(frame, inset, color)
@@ -266,10 +297,10 @@ ShaguTweaks.TimeConvert = function(remaining)
     return color..ceil(remaining)
   elseif remaining < 3600 then
     return color..ceil(remaining/60).."m"
-  elseif remaining < 43200 then
+  elseif remaining < 86400 then
     return color..ceil(remaining/3600).."h"
   else
-    return color..ceil(remaining/43200).."d"
+    return color..ceil(remaining/86400).."d"
   end
 end
 

@@ -1,4 +1,5 @@
-local _G = _G or getfenv(0)
+local _G = ShaguTweaks.GetGlobalEnv()
+local T = ShaguTweaks.T
 local L = ShaguTweaks.L
 local gfind = string.gmatch or string.gfind
 local GetUnitData = ShaguTweaks.GetUnitData
@@ -10,30 +11,32 @@ local strsplit = ShaguTweaks.strsplit
 local friendinfo = gsub(gsub(FRIENDS_LEVEL_TEMPLATE,"%%s","%%s %%s"),"%%d","%%s")
 
 local module = ShaguTweaks:register({
-  title = "Social Colors",
-  description = "Show class colors in Who, Guild, Friends and Chat.",
+  title = T["Social Colors"],
+  description = T["Show class colors in Who, Guild, Friends and Chat."],
   expansions = { ["vanilla"] = true, ["tbc"] = true },
-  category = "Social & Chat",
+  category = T["Social & Chat"],
   enabled = nil,
 })
 
 module.enable = function(self)
   do -- add class colors to chat
     for i=1,NUM_CHAT_WINDOWS do
-      if not _G["ChatFrame"..i].HookAddMessageColor and not Prat then
+      if _G["ChatFrame"..i] and not _G["ChatFrame"..i].HookAddMessageColor and not Prat then
         _G["ChatFrame"..i].HookAddMessageColor = _G["ChatFrame"..i].AddMessage
         _G["ChatFrame"..i].AddMessage = function(frame, text, a1, a2, a3, a4, a5)
-          for name in gfind(text, "|Hplayer:(.-)|h") do
-            local real, _ = strsplit(":", name)
-            local color = "|cffaaaaaa"
-            local class = GetUnitData(real)
+          if text then
+            for name in gfind(text, "|Hplayer:(.-)|h") do
+              local real, _ = strsplit(":", name)
+              local color = "|cffaaaaaa"
+              local class = GetUnitData(real)
 
-            if class and class ~= UNKNOWN then
-              color = rgbhex(RAID_CLASS_COLORS[class])
+              if class and class ~= UNKNOWN then
+                color = rgbhex(RAID_CLASS_COLORS[class])
+              end
+
+              text = string.gsub(text, "|Hplayer:"..name.."|h%["..real.."%]|h(.-:-)",
+                "|r["..color.."|Hplayer:"..name.."|h" .. color .. real .. "|h|r".."]|r".."%1")
             end
-
-            text = string.gsub(text, "|Hplayer:"..name.."|h%["..real.."%]|h(.-:-)",
-            "|r["..color.."|Hplayer:"..name.."|h" .. color .. real .. "|h|r".."]|r".."%1")
           end
 
           _G["ChatFrame"..i].HookAddMessageColor(frame, text, a1, a2, a3, a4, a5)

@@ -1,10 +1,11 @@
-local _G = _G or getfenv(0)
+local _G = ShaguTweaks.GetGlobalEnv()
+local T = ShaguTweaks.T
 
 local module = ShaguTweaks:register({
-  title = "Unit Frame Class Colors",
-  description = "Adds class colors to the player, target and party unit frames.",
+  title = T["Unit Frame Class Colors"],
+  description = T["Adds class colors to the player, target and party unit frames."],
   expansions = { ["vanilla"] = true, ["tbc"] = true },
-  category = "Unit Frames",
+  category = T["Unit Frames"],
   enabled = nil,
 })
 
@@ -13,7 +14,7 @@ local partycolors = function()
     local name = _G['PartyMemberFrame'..id..'Name']
     local _, class = UnitClass("party" .. id)
     local class = RAID_CLASS_COLORS[class] or { r = .5, g = .5, b = .5, a = 1 }
-    name:SetTextColor(class.r, class.g, class.b, 1)
+    if name then name:SetTextColor(class.r, class.g, class.b, 1) end
   end
 end
 

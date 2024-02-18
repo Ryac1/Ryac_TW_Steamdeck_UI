@@ -16,10 +16,17 @@ local module = ShaguTweaks:register({
 -- Global code:
 --   This is where you can put your most basic variable assignments.
 --   Code in this scope will *always* run, no matter if the module is enabled or not.
-local _G = _G or getfenv(0)
+local _G = ShaguTweaks.GetGlobalEnv()
 
 module.enable = function(self)
   -- Module code:
   --   This is where you should put your changes.
   --   Code in this scope will *only* if the module is enabled.
+
+  -- Example:
+  -- Hide actionbar textures:
+  -- for i = 0, 4 do
+  --   _G["MainMenuMaxLevelBar"..i]:Hide()
+  --   _G["MainMenuBarTexture"..i]:Hide()
+  -- end
 end
