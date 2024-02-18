@@ -121,7 +121,7 @@ Right click current images to change them in Steam.
 find more here: https://www.steamgriddb.com/
 
 ![icon](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/f87c6414-8c24-4c31-acf9-8d2c143d0226)
-![wow_sm_banner](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/2a0b9537-029d-43d4-bd5b-055d13dfc2c9)
+![4e09bd41dcb70a21065f3ebdf67b605a](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/8d33db9d-f289-42ff-b294-464c3b65101e)
 ![wow_logo](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/a8e5c434-7ee1-485c-b2bb-569e12010aec)
 ![1ccc0ad70725fbdef023f6c431881114](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/baa4322d-0a26-42b9-84fe-4fc925c91284)
 ![Wow_bg_banner](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/b9325a33-2eaa-41ca-a00a-7994df2e183b)
