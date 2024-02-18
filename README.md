@@ -11,7 +11,8 @@ https://www.youtube.com/watch?v=o0FAUSS4ZJQ
 
 # Download: 
 https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/releases/download/v2.1/TW2_1.rar
-mirror: https://www.mediafire.com/file/riviil0tzhimnzz/TW2_1.rar/file
+
+Mirror: https://www.mediafire.com/file/riviil0tzhimnzz/TW2_1.rar/file
 
 # v2.1:
 This is a new release with the latest files i have been using.
