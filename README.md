@@ -9,7 +9,8 @@ https://www.youtube.com/watch?v=o0FAUSS4ZJQ
 ![Screenshot_2024-02-18-17-05-41-943-edit_com google android youtube](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/8d73f153-8814-4458-9fbc-fd5d8e5cb720)
 
 
-# Download: https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/releases/download/v2.1/TW2_1.rar
+# Download: 
+https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/releases/download/v2.1/TW2_1.rar
 mirror: https://www.mediafire.com/file/riviil0tzhimnzz/TW2_1.rar/file
 
 # v2.1:
