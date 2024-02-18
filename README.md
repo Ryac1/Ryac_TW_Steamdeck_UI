@@ -14,7 +14,7 @@ This is a new release with the latest files i have been using.
 
 Some changes i remember are:
 
-- Added files/folders for the new PVP server (folder 'Turtle WoW' is PVP, 'Nordanaar' is PVE) 
+- Added files/folders for the new PVP server (folder 'Turtle WoW' is PVP, 'Nordanaar' is PVE/RP) 
 - Hunter Pet frame is now correctly in position.
 - Fixed some positioning of the right side buttons.
 - Some minor issues i can't remember :)
