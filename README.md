@@ -111,7 +111,8 @@ possible/known bugs:
 
 # Steam game images
 
-Right click current images to change them in Steam
+Right click current images to change them in Steam.
+find more here: https://www.steamgriddb.com/
 
 ![icon](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/f87c6414-8c24-4c31-acf9-8d2c143d0226)
 ![wow_sm_banner](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/2a0b9537-029d-43d4-bd5b-055d13dfc2c9)
