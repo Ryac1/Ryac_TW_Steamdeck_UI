@@ -1,6 +1,8 @@
 # Ryac Turtle WoW Steam Deck UI and control layout
 Steamdeck UI for TurtleWow and other 1.12 servers with 40+ actionbuttons
-
+installation guide:
+https://youtu.be/ZGRHh6pDgPY?si=1djr33Dtg1Fw7p0o
+v2 overview:
 https://www.youtube.com/watch?v=o0FAUSS4ZJQ
 ![Screenshot_2024-02-18-17-05-41-943-edit_com google android youtube](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/8d73f153-8814-4458-9fbc-fd5d8e5cb720)
 
