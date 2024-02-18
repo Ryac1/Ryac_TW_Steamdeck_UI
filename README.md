@@ -109,9 +109,10 @@ possible/known bugs:
 - for warriors and other single spell classes, when buying new ranks (heroic strike for ex.) it will remove the button/spell from the bar for some reason, you need to do a reload once to fix it
 - the Turtle Wow minimap icons sometimes do not stay in place
 
-# Steam images
+# Steam game images
 
 Right click current images to change them in Steam
+
 ![icon](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/f87c6414-8c24-4c31-acf9-8d2c143d0226)
 ![wow_sm_banner](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/2a0b9537-029d-43d4-bd5b-055d13dfc2c9)
 ![wow_logo](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/a8e5c434-7ee1-485c-b2bb-569e12010aec)
