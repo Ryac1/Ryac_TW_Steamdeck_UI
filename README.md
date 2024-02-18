@@ -46,6 +46,12 @@ Get more addons here: https://turtle-wow.fandom.com/wiki/Addons
 - Shagu Plates: https://shagu.org/ShaguPlates/
 - Grey auto sell: https://github.com/ttcremers/GrayAutoSell
 
+# Target macro 
+
+I recommend a target macro that i put on L1 actionbutton to target nearest enemies:
+
+/run TargetNearestEnemy()
+
 # Controller Layout
 ![IMG_20240218_164701](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/5477e7d4-1392-477a-8225-a0712ba84ad7)
 
