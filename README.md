@@ -6,6 +6,7 @@ https://youtu.be/ZGRHh6pDgPY?si=1djr33Dtg1Fw7p0o
 
 v2 overview:
 https://www.youtube.com/watch?v=o0FAUSS4ZJQ
+
 ![Version_2__Turtle_WoW__112_Steam_Deck_setup_guide_with_40_b](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/d4642b87-53da-4c19-919e-dd7e0df47683)
 
 
