@@ -130,3 +130,12 @@ find more here: https://www.steamgriddb.com/
 ![20240218201304_1](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/890e71cf-8c5e-40e0-8908-23dc9d303e42)
 ![20240218164059_1](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/4666cbdd-0bf2-431f-873c-2295e795e333)
 
+## Credits:
+
+Addons used:
+
+- Discord Action Bars by 'Undercity' https://github.com/UndercityAddons-Vanilla/DiscordActionBars
+- Moveanything by 'GryllsAddons' https://github.com/GryllsAddons/MoveAnything
+- Shagu Tweaks by 'Shagu' https://shagu.org/
+
+And ofcourse the Turtle WoW team! - https://turtle-wow.org
