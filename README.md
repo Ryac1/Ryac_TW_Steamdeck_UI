@@ -135,8 +135,11 @@ These steps are from the installation guide video.
 ## Frequently asked questions
 
 - Why can't i find the Ryac controller layout in steam?
-  > Make sure you rename the game name in steam (wow.exe for ex.) to: World of Warcraft, it may take a few minutes for it to sync, i recommend restarting steam.
+  > Make sure you rename the game name in steam (wow.exe for ex.) to: World of Warcraft, it may take a few minutes for it to sync, i recommend restarting steam. Then search for 'Ryac' and you should find the 2.1 version, make sure to click apply layout.
+- Why do i not see the profiles ingame in the /dab options?
+  > Most likely you have not renamed the account folder that is named 'XXXXXX' by default in the WTF/account folder. Rename that folder to your account name and it should show correctly in game.
 - 
+
 
 
 ## Steam game images
