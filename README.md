@@ -18,7 +18,7 @@ https://www.youtube.com/watch?v=o0FAUSS4ZJQ
 - [Controller layout](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#controller-layout)
 - [Installation steps](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#installation-steps)
 - [Possible/known bugs](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#possibleknown-bugs)
-- [F.A.Q.](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#F.A.Q.)
+- [Frequently asked questions](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#faq)
 - [Steam game images](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#steam-game-images)
 - [Screenshots](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#screenshots)
 - [Credits](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#credits)
