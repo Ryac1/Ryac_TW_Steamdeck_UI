@@ -140,7 +140,8 @@ These steps are from the installation guide video.
   > Most likely you have not renamed the account folder that is named 'XXXXXX' by default in the WTF/account folder. Rename that folder to your account name and it should show correctly in game.
 - Will this also work on X device?
   > Since it uses the 'on-touch' sensors and trackpads it will not work on other handheld devices. Shagu made a [controller addon](https://shagu.org/ShaguController/), you could try that. 
--
+- How do i add spells onto the L2/R2 action buttons?
+  > Make sure to hold down L2 or R2 first and then drag the spell you want onto that bar, for some reason it will not work the other way around.
 
 ## Steam game images
 
