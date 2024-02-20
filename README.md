@@ -18,9 +18,9 @@ https://www.youtube.com/watch?v=o0FAUSS4ZJQ
 - [Controller layout](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#controller-layout)
 - [Installation steps](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#installation-steps)
 - [Possible/known bugs](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#possibleknown-bugs)
+- [F.A.Q.](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#F.A.Q.)
 - [Steam game images](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#steam-game-images)
 - [Screenshots](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#screenshots)
-- [F.A.Q.](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#F.A.Q.)
 - [Credits](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#credits)
 
 ## Download: 
@@ -94,7 +94,7 @@ Here is a list of controls:
 
 You can change anything you like to and save it as local layout.
 
-## Installation steps:
+## Installation steps
 
 These steps are from the installation guide video.
 
@@ -127,10 +127,12 @@ These steps are from the installation guide video.
 27. You can hold down L2 to drag spells onto those bars.
 28. Have fun :)
 
-## possible/known bugs:
+## possible/known bugs
 
 - for warriors and other single spell classes, when buying new ranks (heroic strike for ex.) it will remove the button/spell from the bar for some reason, you need to do a reload once to fix it
 - the Turtle Wow minimap icons sometimes do not stay in place
+
+## F.A.Q
 
 ## Steam game images
 
@@ -148,7 +150,7 @@ Tutorial: https://www.youtube.com/watch?v=kI8kSws7aS0
 ![20240218201304_1](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/890e71cf-8c5e-40e0-8908-23dc9d303e42)
 ![20240218164059_1](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/4666cbdd-0bf2-431f-873c-2295e795e333)
 
-## Credits:
+## Credits
 
 Addons used:
 
