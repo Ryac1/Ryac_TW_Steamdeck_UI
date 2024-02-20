@@ -9,6 +9,19 @@ https://www.youtube.com/watch?v=o0FAUSS4ZJQ
 
 ![Version_2__Turtle_WoW__112_Steam_Deck_setup_guide_with_40_b](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/d4642b87-53da-4c19-919e-dd7e0df47683)
 
+## Jump to step:
+
+- [Download](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#download)
+- [v2.1](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#v21)
+- [Extra addons](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#extra-addons)
+- [Target Macro](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#target-macro)
+- [Controller layout](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#controller-layout)
+- [Installation steps](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#installation-steps)
+- [Possible/known bugs](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#possibleknown-bugs)
+- [Steam game images](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#steam-game-images)
+- [Screenshots](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#screenshots)
+- [F.A.Q.](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#F.A.Q.)
+- [Credits](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#credits)
 
 ## Download: 
 https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/releases/download/v2.1/TW2_1.rar
