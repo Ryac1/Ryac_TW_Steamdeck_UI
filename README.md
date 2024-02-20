@@ -132,7 +132,12 @@ These steps are from the installation guide video.
 - for warriors and other single spell classes, when buying new ranks (heroic strike for ex.) it will remove the button/spell from the bar for some reason, you need to do a reload once to fix it
 - the Turtle Wow minimap icons sometimes do not stay in place
 
-## F.A.Q
+## Frequently asked questions
+
+- Why can't i find the Ryac controller layout in steam?
+  > Make sure you rename the game name in steam (wow.exe for ex.) to: World of Warcraft, it may take a few minutes for it to sync, i recommend restarting steam.
+- 
+
 
 ## Steam game images
 
