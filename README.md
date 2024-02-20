@@ -96,7 +96,7 @@ You can change anything you like to and save it as local layout.
 
 ## Installation steps
 
-These steps are from the installation guide video.
+These steps are from the [installation guide video](https://youtu.be/ZGRHh6pDgPY?si=1djr33Dtg1Fw7p0o)
 
 1. I assume you have made an account and downloaded the Turtle WoW and my file, check the description. If you have not then do this now.
 2. First you go to the downloads folder and extract the turtle WoW file to you documents folder.
