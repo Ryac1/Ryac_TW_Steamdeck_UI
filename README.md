@@ -146,6 +146,7 @@ These steps are from the installation guide video.
 
 Right click current images to change them in Steam.
 find more here: https://www.steamgriddb.com/
+
 Tutorial: https://www.youtube.com/watch?v=kI8kSws7aS0
 
 ![icon](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/f87c6414-8c24-4c31-acf9-8d2c143d0226)
