@@ -152,14 +152,18 @@ Tutorial: https://www.youtube.com/watch?v=kI8kSws7aS0
 
 - Icon:
 ![icon](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/f87c6414-8c24-4c31-acf9-8d2c143d0226)
-- Small banner:
-![4e09bd41dcb70a21065f3ebdf67b605a](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/8d33db9d-f289-42ff-b294-464c3b65101e)
-- Big banner:
-![Wow_bg_banner](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/b9325a33-2eaa-41ca-a00a-7994df2e183b)
-- Wow Logo:
-![wow_logo](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/a8e5c434-7ee1-485c-b2bb-569e12010aec)
+
 - Box:
 ![1ccc0ad70725fbdef023f6c431881114](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/baa4322d-0a26-42b9-84fe-4fc925c91284)
+
+- Small banner:
+![4e09bd41dcb70a21065f3ebdf67b605a](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/8d33db9d-f289-42ff-b294-464c3b65101e)
+
+- Big banner:
+![Wow_bg_banner](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/b9325a33-2eaa-41ca-a00a-7994df2e183b)
+
+- Wow Logo:  
+![wow_logo](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/a8e5c434-7ee1-485c-b2bb-569e12010aec)
 
 ## Screenshots
 ![20240218201304_1](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/890e71cf-8c5e-40e0-8908-23dc9d303e42)
