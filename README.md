@@ -94,6 +94,10 @@ Here is a list of controls:
 
 You can change anything you like to and save it as local layout.
 
+**Action button layout:**
+
+![Ryac Steamdeck UI button layout](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/4cf5d58b-976a-4a53-8646-5d5774404e4c)
+
 ## Installation steps
 
 These steps are from the [installation guide video](https://youtu.be/ZGRHh6pDgPY?si=1djr33Dtg1Fw7p0o)
