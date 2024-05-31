@@ -71,6 +71,8 @@ I recommend a target macro that i put on L1 actionbutton to target nearest enemi
 
 ## Controller Layout
 ![IMG_20240218_164701](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/5477e7d4-1392-477a-8225-a0712ba84ad7)
+![IMG_20240531_094609](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/7932109c-0cec-4b21-b531-20f5a2cd4d60)
+![IMG_20240531_094604](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/f7136213-c4f3-4fce-97ff-0d656a1d5bd5)
 
 You can find the layout if you rename the game in Steam to "World of Warcraft".
 the layout is named: "Ryac's template DAB TW v2.1"
