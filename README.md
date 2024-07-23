@@ -77,6 +77,8 @@ I recommend a target macro that i put on L1 actionbutton to target nearest enemi
 You can find the layout if you rename the game in Steam to "World of Warcraft".
 the layout is named: "Ryac's template DAB TW v2.1"
 
+It seems that it gets removed sometimes, ill try to reupload it but i also added it to game name "Turtle wow" just to be sure. Also make sure to store it as a local layout once you get it.
+
 Here is a list of controls:
 
 - L2/R2: hold to switch between button pages
