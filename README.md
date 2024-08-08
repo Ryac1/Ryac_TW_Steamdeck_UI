@@ -12,16 +12,16 @@ https://www.youtube.com/watch?v=o0FAUSS4ZJQ
 ## Jump to step:
 
 - [Download](#download)
-- [v2.1](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#v21)
-- [Extra addons](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#extra-addons)
-- [Target Macro](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#target-macro)
-- [Controller layout](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#controller-layout)
-- [Installation steps](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#installation-steps)
-- [Possible/known bugs](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#possibleknown-bugs)
-- [Frequently asked questions](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#frequently-asked-questions)
-- [Steam game images](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#steam-game-images)
-- [Screenshots](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#screenshots)
-- [Credits](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#credits)
+- [v2.1](#v21)
+- [Extra addons](#extra-addons)
+- [Target Macro](#target-macro)
+- [Controller layout](#controller-layout)
+- [Installation steps](#installation-steps)
+- [Possible/known bugs](#possibleknown-bugs)
+- [Frequently asked questions](#frequently-asked-questions)
+- [Steam game images](#steam-game-images)
+- [Screenshots](#screenshots)
+- [Credits](#credits)
 
 ## Download: 
 https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/releases/download/v2.1/TW2_1.rar
