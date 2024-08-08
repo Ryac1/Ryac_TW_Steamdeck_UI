@@ -11,7 +11,7 @@ https://www.youtube.com/watch?v=o0FAUSS4ZJQ
 
 ## Jump to step:
 
-- [Download](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#download)
+- [Download](#download)
 - [v2.1](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#v21)
 - [Extra addons](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#extra-addons)
 - [Target Macro](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#target-macro)
