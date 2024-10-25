@@ -9,6 +9,9 @@ https://www.youtube.com/watch?v=o0FAUSS4ZJQ
 
 ![Version_2__Turtle_WoW__112_Steam_Deck_setup_guide_with_40_b](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/d4642b87-53da-4c19-919e-dd7e0df47683)
 
+25/10/24: There seems to be an issue with experimental proton, camera seems bugged. i recommend using 7.06 instead.
+Also the mouse cursor does not jump back to center of screen when touching right stick each time. this will probably be fixed later by valve..
+
 ## Jump to step:
 
 - [Download](#download)
