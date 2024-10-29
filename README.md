@@ -28,12 +28,12 @@ Also the mouse cursor does not jump back to center of screen when touching right
 ## Download: 
 https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/releases/download/v2.2/TW2_2.rar
 
-## Make sure to also dowload the latest versions of these addons to get the best experience:
+Make sure to also dowload the latest versions of these addons to get the best experience:
 
-Moveanything: https://github.com/GryllsAddons/MoveAnything
-pfQuest: https://github.com/shagu/pfQuest
-pfQuest Turtle: https://github.com/shagu/pfQuest-turtle
-Shagutweaks: https://github.com/shagu/ShaguTweaks
+- Moveanything: https://github.com/GryllsAddons/MoveAnything  
+- pfQuest: https://github.com/shagu/pfQuest  
+- pfQuest Turtle: https://github.com/shagu/pfQuest-turtle  
+- Shagutweaks: https://github.com/shagu/ShaguTweaks  
 
 ## v2.2:
 - Stripped most addons from the file so that you need to download the latest versions of the addons needed.
