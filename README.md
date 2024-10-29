@@ -15,7 +15,6 @@ Also the mouse cursor does not jump back to center of screen when touching right
 ## Jump to step:
 
 - [Download](#download)
-- [v2.1](#v21)
 - [Extra addons](#extra-addons)
 - [Target Macro](#target-macro)
 - [Controller layout](#controller-layout)
@@ -27,13 +26,20 @@ Also the mouse cursor does not jump back to center of screen when touching right
 - [Credits](#credits)
 
 ## Download: 
-https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/releases/download/v2.1/TW2_1.rar
+https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/releases/download/v2.2/TW2_2.rar
 
-Mirror: https://www.mediafire.com/file/riviil0tzhimnzz/TW2_1.rar/file
+## Make sure to also dowload the latest versions of these addons to get the best experience:
+
+Moveanything: https://github.com/GryllsAddons/MoveAnything
+pfQuest: https://github.com/shagu/pfQuest
+pfQuest Turtle: https://github.com/shagu/pfQuest-turtle
+Shagutweaks: https://github.com/shagu/ShaguTweaks
+
+## v2.2:
+- Stripped most addons from the file so that you need to download the latest versions of the addons needed.
+- This is done to prevent errors.
 
 ## v2.1:
-This is a new release with the latest files i have been using.
-
 Some changes i remember are:
 
 - Added files/folders for the new PVP server (folder 'Turtle WoW' is PVP, 'Nordanaar' is PVE/RP) 
@@ -48,8 +54,6 @@ Some changes i remember are:
 i recommend getting the following addons (that i use myself and stripped from the above file to save on space):
 Get more addons here: https://turtle-wow.fandom.com/wiki/Addons
 
-- PfQuest:  https://github.com/shagu/pfQuest/releases/latest/download/pfQuest-full.zip
-- PfQuest Turtle Wow:  https://github.com/shagu/pfQuest-turtle/archive/master.zip
 - LevelRange 2: https://github.com/Tenyar97/LevelRange-Turtle
 - AutoDB 2: https://github.com/refaim/AutoDB2
 - AUX: https://github.com/gwetchen/aux-addon-turtle
