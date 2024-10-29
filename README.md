@@ -9,19 +9,22 @@ https://www.youtube.com/watch?v=o0FAUSS4ZJQ
 
 ![Version_2__Turtle_WoW__112_Steam_Deck_setup_guide_with_40_b](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/d4642b87-53da-4c19-919e-dd7e0df47683)
 
+25/10/24: There seems to be an issue with experimental proton, camera seems bugged. i recommend using 7.06 instead.
+Also the mouse cursor does not jump back to center of screen when touching right stick each time. this will probably be fixed later by valve..
+
 ## Jump to step:
 
-- [Download](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#download)
-- [v2.1](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#v21)
-- [Extra addons](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#extra-addons)
-- [Target Macro](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#target-macro)
-- [Controller layout](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#controller-layout)
-- [Installation steps](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#installation-steps)
-- [Possible/known bugs](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#possibleknown-bugs)
-- [Frequently asked questions](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#frequently-asked-questions)
-- [Steam game images](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#steam-game-images)
-- [Screenshots](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#screenshots)
-- [Credits](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI#credits)
+- [Download](#download)
+- [v2.1](#v21)
+- [Extra addons](#extra-addons)
+- [Target Macro](#target-macro)
+- [Controller layout](#controller-layout)
+- [Installation steps](#installation-steps)
+- [Possible/known bugs](#possibleknown-bugs)
+- [Frequently asked questions](#frequently-asked-questions)
+- [Steam game images](#steam-game-images)
+- [Screenshots](#screenshots)
+- [Credits](#credits)
 
 ## Download: 
 https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/releases/download/v2.1/TW2_1.rar
@@ -71,9 +74,13 @@ I recommend a target macro that i put on L1 actionbutton to target nearest enemi
 
 ## Controller Layout
 ![IMG_20240218_164701](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/5477e7d4-1392-477a-8225-a0712ba84ad7)
+![IMG_20240531_094609](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/7932109c-0cec-4b21-b531-20f5a2cd4d60)
+![IMG_20240531_094604](https://github.com/Ryac1/Ryac_TW_Steamdeck_UI/assets/133106738/f7136213-c4f3-4fce-97ff-0d656a1d5bd5)
 
 You can find the layout if you rename the game in Steam to "World of Warcraft".
 the layout is named: "Ryac's template DAB TW v2.1"
+
+It seems that it gets removed sometimes, ill try to reupload it but i also added it to game name "Turtle wow" just to be sure. Also make sure to store it as a local layout once you get it.
 
 Here is a list of controls:
 
@@ -139,7 +146,7 @@ These steps are from the [installation guide video](https://youtu.be/ZGRHh6pDgPY
 ## Frequently asked questions
 
 - Why can't i find the Ryac controller layout in steam?
-  > Make sure you rename the game name in steam (wow.exe for ex.) to: World of Warcraft, it may take a few minutes for it to sync, i recommend restarting steam. Then search for 'Ryac' and you should find the 2.1 version, make sure to click apply layout.
+  > First: Make sure when you are on 'Community Layouts' to press X to 'Show all Layouts' sometimes it will only show if you do that. Second: Make sure you rename the game name in steam (wow.exe for ex.) to: World of Warcraft, it may take a few minutes for it to sync, i recommend restarting steam. Then search for 'Ryac' and you should find the 2.1 version, make sure to click apply layout. ## Warning: The layout has been removed from Steam before, so if it gets removed again make sure to send me a message and i will upload it again, also make sure to save the layout as a local controller layout that way you will always have it and can share it. 
 - Why do i not see the profiles ingame in the /dab options?
   > Most likely you have not renamed the account folder that is named 'XXXXXX' by default in the WTF/account folder. Rename that folder to your account name and it should show correctly in game.
 - Will this also work on X device?
