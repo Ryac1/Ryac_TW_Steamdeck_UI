@@ -58,7 +58,6 @@ Get more addons here: https://turtle-wow.fandom.com/wiki/Addons
 - AutoDB 2: https://github.com/refaim/AutoDB2
 - AUX: https://github.com/gwetchen/aux-addon-turtle
 - Cooldowntimers: https://github.com/Road-block/CooldownTimers (usefull to see cooldowns on other pages, "/cdt unlock" to move frame)
-- Exended Quest log 3: https://github.com/laytya/EQL3
 - Equip compare: https://github.com/laytya/EQCompare-Vanilla
 - Fishing buddy: https://github.com/Lexiebean/FishingBuddy
 - SUCC-bag (all in one bag): https://github.com/GryllsAddons/SUCC-bag
