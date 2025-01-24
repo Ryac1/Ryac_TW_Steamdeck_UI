@@ -15,6 +15,7 @@ Also the mouse cursor does not jump back to center of screen when touching right
 ## Jump to step:
 
 - [Download](#download)
+- [Turtle WoW Launcher](#Turtle-WoW-Launcher) 
 - [Extra addons](#extra-addons)
 - [Target Macro](#target-macro)
 - [Controller layout](#controller-layout)
@@ -50,6 +51,20 @@ Some changes i remember are:
 - Added specific character profiles for Hunter,Warrior,Rogue and Druid in WTF\Account\XXXXXXX\Nordanaar (PVE) and in WTF\Account\XXXXXXX\Turtle WoW (PVP), remember to rename these folders to your own character names, this will ensure the least amount of tweaking.
   
 -----------------------------------
+## Turtle WoW Launcher
+It is possible to use the Turtle WoW launcher.
+To do this do the following:
+
+- Step 1: Go to Desktop Mode
+- Step 2: Download the latest launcher from [here](https://launcher.turtle-wow.org/api/launcher/TurtleWoW.exe?download&mirror=en1).
+- Step 3: Move the EXE to the Turtlewow folder and let it overwrite the launcher in there ( at the moment i had to do this since it did not get the latest launcher file)
+- Step 4: Go Back to Steam mode
+- Step 5: on your TurtleWow game in Steam, go to properties and find the directory and rename it from 'Wow.exe' to 'TurtleWoW.exe'
+- Step 6: Change Compatibility to 'Proton Experimental' (It might function with others but i had to change it)
+- Step 7: Press Play, it will show a 'Running inside emkulator?' screen, you can press confirm. (there is a Linux file, not sure if it is better but this works)
+- Step 8: Sign in if you get the sign in screen.
+- Step 9: When you are signed in you can see the Launcher screen, it will auto update, update addons (that are recognized), you can change settings and press play. (i usually close the launcher (press X) after pressing play, probably not neccessary) 
+
 ## Extra addons
 i recommend getting the following addons (that i use myself and stripped from the above file to save on space):
 Get more addons here: https://turtle-wow.fandom.com/wiki/Addons
