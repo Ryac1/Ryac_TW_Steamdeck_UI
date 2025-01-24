@@ -63,7 +63,7 @@ To do this do the following:
 - Step 6: Change Compatibility to 'Proton Experimental' (It might function with others but i had to change it)
 - Step 7: Press Play, it will show a 'Running inside emkulator?' screen, you can press confirm. (there is a Linux file, not sure if it is better but this works)
 - Step 8: Sign in if you get the sign in screen.
-- Step 9: When you are signed in you can see the Launcher screen, it will auto update, update addons (that are recognized), you can change settings and press play. (i usually close the launcher (press X) after pressing play, probably not neccessary) 
+- Step 9: When you are signed in you can see the Launcher screen, it will auto update and see if there are addon updates (that are recognized), you can change ingame settings and press play. (i usually close the launcher (press X) after pressing play, probably not neccessary) 
 
 ## Extra addons
 i recommend getting the following addons (that i use myself and stripped from the above file to save on space):
