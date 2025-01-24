@@ -55,17 +55,17 @@ Some changes i remember are:
 It is possible to use the Turtle WoW launcher.
 To do this do the following:
 
-- Step 1: Go to Desktop Mode
-- Step 2: Download the latest launcher from [here](https://launcher.turtle-wow.org/api/launcher/TurtleWoW.exe?download&mirror=en1).
-- Step 3: Move the EXE to the Turtlewow folder and let it overwrite the launcher in there ( at the moment i had to do this since it did not get the latest launcher file)
-- Step 4: Go Back to Steam mode
-- Step 5: on your TurtleWow game in Steam, go to properties and find the directory and rename it from 'Wow.exe' to 'TurtleWoW.exe'
+1. Go to Desktop Mode
+2. Download the latest launcher from [here](https://launcher.turtle-wow.org/api/launcher/TurtleWoW.exe?download&mirror=en1).
+3. Move the EXE to the Turtlewow folder and let it overwrite the launcher in there ( at the moment i had to do this since it did not get the latest launcher file)
+4. Go Back to Steam mode
+5. on your TurtleWow game in Steam, go to properties and find the directory and rename it from 'Wow.exe' to 'TurtleWoW.exe'
 - ![20250124_151539](https://github.com/user-attachments/assets/c41cf361-5af8-4e89-94a7-f67f443fdabc)
-- Step 6: Change Compatibility to 'Proton Experimental' (It might function with others but i had to change it)
-- Step 7: Press Play, it will show a 'Running inside emulator?' screen, you can press confirm. (there is a Linux file, but this works)
+6. Change Compatibility to 'Proton Experimental' (It might function with others but i had to change it)
+7. Press Play, it will show a 'Running inside emulator?' screen, you can press confirm. (there is a Linux file, but this works)
 - ![20250124_152759](https://github.com/user-attachments/assets/54514c50-efd2-4d12-b9fc-73a8de2434b4)
-- Step 8: Sign in if you get the sign in screen.
-- Step 9: When you are signed in you can see the Launcher screen, it will auto update and see if there are addon updates (that are recognized), you can change ingame settings and press play. (i usually close the launcher (press X) after pressing play, probably not neccessary)
+8. Sign in if you get the sign in screen.
+9. When you are signed in you can see the Launcher screen, it will auto update and see if there are addon updates (that are recognized), you can change ingame settings and press play. (i usually close the launcher (press X) after pressing play, probably not neccessary)
 - ![20250124_152810](https://github.com/user-attachments/assets/d0743b84-b0e2-43be-93fa-5b98fba1da82)
 
 ## Extra addons
