@@ -52,6 +52,9 @@ Some changes i remember are:
   
 -----------------------------------
 ## Turtle WoW Launcher
+
+20 april 2025 update: it seems the latest version on the launcher broke it for steam. so for now use wow.exe instead..
+
 It is possible to use the Turtle WoW launcher.
 To do this do the following:
 
