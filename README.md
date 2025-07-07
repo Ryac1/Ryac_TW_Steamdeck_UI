@@ -54,6 +54,7 @@ Some changes i remember are:
 ## Turtle WoW Launcher
 
 20 april 2025 update: it seems the latest version on the launcher broke it for steam. There is a guide on how to get it to work here: https://forum.turtle-wow.org/viewtopic.php?p=129648
+07 Juli 2025 update: It is currently not possible to get a recent Launcher working. There might be a Linux version coming that could work.
 
 It is possible to use the Turtle WoW launcher.
 To do this do the following:
